@@ -124,6 +124,12 @@
   .contact-row a:hover{ border-color:var(--ink); }
   .profile-text{ font-size:15px; color:#2b2b28; max-width:580px; margin:0 0 16px; }
   .profile-text strong{ color:var(--ink); }
+  .avatar{
+    width:112px; height:112px; border-radius:50%; object-fit:cover; object-position:center top;
+    display:block; margin:0 0 22px; border:1px solid var(--line);
+    box-shadow:0 8px 24px rgba(20,23,26,0.12); background:var(--paper-2);
+  }
+  @media (max-width:600px){ .avatar{ width:92px; height:92px; margin-bottom:18px; } }
 
   .stat-panel{
     background:var(--ink); color:#fff; border-radius:14px; padding:28px 26px 24px;
@@ -424,6 +430,7 @@
       <p class="eyebrow">Performance Marketing · Paid Media, Growth &amp; AI-Native Marketing</p>
       <div class="hero-grid">
         <div class="hero-copy">
+          <img class="avatar" src="portrait.jpg" width="112" height="112" alt="Kavinda Narayana" fetchpriority="high">
           <h1 class="name">Kavinda Narayana</h1>
           <p class="role">Performance Marketing Specialist</p>
           <p class="lede">I turn ad budgets into measurable, profitable revenue — planning, launching and optimising paid media across Google, Meta, Snapchat and TikTok — and I build the AI tooling, with Claude Code, that makes the whole operation faster, sharper and self-reporting.</p>
